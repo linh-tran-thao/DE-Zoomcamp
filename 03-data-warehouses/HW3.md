@@ -142,7 +142,7 @@ python load_yellow_taxi_data.py
 ```
 ## Output
 
-![alt text](image.png)
+![alt text](03-data-warehouses/image (1).png)
 
 ## Make External and Reguler Table in Bigquery
 
@@ -205,19 +205,19 @@ CREATE OR REPLACE TABLE zoomcamp_hw3.yellow_tripdata_2024_06 AS (
 SELECT COUNT (*) FROM ammar-zoomcamp.zoomcamp_hw3.yellow_tripdata_2024;
 ```
 
-![alt text](image-1.png)
+![alt text](03-data-warehouses/image-1.png)
 
 ## Question 2
 
 ```sql 
 SELECT DISTINCT PULocationID FROM ammar-zoomcamp.zoomcamp_hw3.yellow_tripdata_2024;
 ```
-![alt text](image-2.png)
+![alt text](03-data-warehouses/image-2.png)
 
 ```sql
 SELECT DISTINCT PULocationID FROM ammar-zoomcamp.zoomcamp_hw3.yellow_trip_data_ext; 
 ```
-![alt text](image-3.png)
+![alt text](03-data-warehouses/image-3.png)
 
 ## Question 3
 
@@ -236,7 +236,7 @@ SELECT DISTINCT COUNT (*)
 FROM ammar-zoomcamp.zoomcamp_hw3.yellow_tripdata_2024
 WHERE fare_amount = 0;
 ```
-![alt text](image-4.png)
+![alt text](03-data-warehouses/image-4.png)
 
 ## Question 5
 
@@ -255,14 +255,14 @@ SELECT DISTINCT VendorID
 FROM ammar-zoomcamp.zoomcamp_hw3.yellow_tripdata_2024
 WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-15';
 ```
-![alt text](image-5.png)
+![alt text](03-data-warehouses/image-5.png)
 
 ```sql
 SELECT DISTINCT VendorID 
 FROM zoomcamp_hw3.yellow_tripdata_2024_partition_cluster 
 WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-15';
 ```
-![alt text](image-6.png)
+![alt text](03-data-warehouses/image-6.png)
 
 ## Question 7
 
